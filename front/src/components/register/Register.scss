@@ -1,0 +1,27 @@
+.register-container {
+  @apply flex items-center justify-center h-screen bg-gray-100;
+}
+
+.register-form {
+  @apply p-8 bg-white rounded shadow-md w-96;
+
+  .register-title {
+    @apply mb-4 text-2xl font-bold;
+  }
+
+  .register-input {
+    @apply w-full p-2 mb-4 border rounded;
+  }
+
+  .register-button {
+    @apply w-full p-2 text-white bg-blue-500 rounded;
+
+    &:disabled {
+      @apply bg-gray-400;
+    }
+  }
+
+  .register-error {
+    @apply mb-4 text-red-500;
+  }
+}
